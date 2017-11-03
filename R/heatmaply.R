@@ -260,6 +260,10 @@ is.plotly <- function(x) {
 #' @param labRow,labCol character vectors with row and column labels to use; these default to rownames(x) or colnames(x), respectively.
 #' if set to NA, they change the value in showticklabels to be FALSE. This is mainly to keep
 #' backward compatibility with gplots::heatmap.2.
+#' @param webGL Convert plot objects to webGL? webGL offloads some of the 
+#' client-side processing to the users GPU. 
+#' This is useful for large plots, if consumers are likely to have sufficient
+#' hardware to take advantage of the change.
 #'
 #' @export
 #' @examples
